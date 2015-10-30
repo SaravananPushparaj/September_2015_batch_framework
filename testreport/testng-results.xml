@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="12" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Selenium Test" duration-ms="349633" started-at="2015-10-30T07:02:49Z" finished-at="2015-10-30T07:08:38Z">
+    <groups>
+      <group name="SmokeTest">
+        <method signature="BookCart_TestCase.add2Cart(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.BookCart_TestCase@1ba92bb]" name="add2Cart" class="TestCases.BookCart_TestCase"/>
+        <method signature="BookSearch_TestCase.valid_booksearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.BookSearch_TestCase@e7f9b3]" name="valid_booksearch" class="TestCases.BookSearch_TestCase"/>
+        <method signature="LoginTestcase.valid_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTestcase@8a6351]" name="valid_login" class="TestCases.LoginTestcase"/>
+      </group> <!-- SmokeTest -->
+      <group name="RegressionTest">
+        <method signature="BookCart_TestCase.add2Cart(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.BookCart_TestCase@1ba92bb]" name="add2Cart" class="TestCases.BookCart_TestCase"/>
+        <method signature="BookSearch_TestCase.Invalid_booksearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.BookSearch_TestCase@e7f9b3]" name="Invalid_booksearch" class="TestCases.BookSearch_TestCase"/>
+        <method signature="BookSearch_TestCase.valid_booksearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.BookSearch_TestCase@e7f9b3]" name="valid_booksearch" class="TestCases.BookSearch_TestCase"/>
+        <method signature="LoginTestcase.Invalid_login_Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTestcase@8a6351]" name="Invalid_login_Test" class="TestCases.LoginTestcase"/>
+        <method signature="LoginTestcase.valid_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTestcase@8a6351]" name="valid_login" class="TestCases.LoginTestcase"/>
+      </group> <!-- RegressionTest -->
+    </groups>
+    <test name="CompleteTest" duration-ms="349633" started-at="2015-10-30T07:02:49Z" finished-at="2015-10-30T07:08:38Z">
+      <class name="TestCases.BookCart_TestCase">
+        <test-method status="PASS" signature="add2Cart(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.BookCart_TestCase@1ba92bb]" name="add2Cart" duration-ms="47933" started-at="2015-10-30T12:37:50Z" data-provider="add_cart_DP" finished-at="2015-10-30T12:38:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qtpworld2008@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[learn123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Flood and Fire]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Flood and Fire]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add2Cart -->
+      </class> <!-- TestCases.BookCart_TestCase -->
+      <class name="TestCases.BookSearch_TestCase">
+        <test-method status="PASS" signature="Invalid_booksearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.BookSearch_TestCase@e7f9b3]" name="Invalid_booksearch" duration-ms="19206" started-at="2015-10-30T12:35:53Z" data-provider="Invalid_booksearch_DP" finished-at="2015-10-30T12:36:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bbsj54sfdds]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sorry..'bbsj54sfdds' does not match any product on Rediff Books.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Invalid_booksearch -->
+        <test-method status="FAIL" signature="valid_booksearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.BookSearch_TestCase@e7f9b3]" name="valid_booksearch" duration-ms="22372" started-at="2015-10-30T12:36:12Z" data-provider="Valid_booksearch_DP" finished-at="2015-10-30T12:36:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_08]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chandler]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[430.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [430] but found [415]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [430] but found [415]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at TestCases.BookSearch_TestCase.valid_booksearch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valid_booksearch -->
+        <test-method status="PASS" signature="valid_booksearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.BookSearch_TestCase@e7f9b3]" name="valid_booksearch" duration-ms="50975" started-at="2015-10-30T12:36:35Z" data-provider="Valid_booksearch_DP" finished-at="2015-10-30T12:37:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_09]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jaico]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valid_booksearch -->
+        <test-method status="FAIL" signature="valid_booksearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.BookSearch_TestCase@e7f9b3]" name="valid_booksearch" duration-ms="24816" started-at="2015-10-30T12:37:26Z" data-provider="Valid_booksearch_DP" finished-at="2015-10-30T12:37:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ways]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[495.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [495] but found [492]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [495] but found [492]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at TestCases.BookSearch_TestCase.valid_booksearch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valid_booksearch -->
+      </class> <!-- TestCases.BookSearch_TestCase -->
+      <class name="TestCases.LoginTestcase">
+        <test-method status="PASS" signature="Invalid_login_Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTestcase@8a6351]" name="Invalid_login_Test" duration-ms="36920" started-at="2015-10-30T12:32:50Z" data-provider="Invalid_Login_DP" finished-at="2015-10-30T12:33:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Raje]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hjkh]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Sorry we were unable to complete this step because :]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Invalid_login_Test -->
+        <test-method status="PASS" signature="Invalid_login_Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTestcase@8a6351]" name="Invalid_login_Test" duration-ms="26639" started-at="2015-10-30T12:33:27Z" data-provider="Invalid_Login_DP" finished-at="2015-10-30T12:33:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sfag]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[avioto]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Sorry we were unable to complete this step because :]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Invalid_login_Test -->
+        <test-method status="PASS" signature="Invalid_login_Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTestcase@8a6351]" name="Invalid_login_Test" duration-ms="24132" started-at="2015-10-30T12:33:54Z" data-provider="Invalid_Login_DP" finished-at="2015-10-30T12:34:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fg]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Sorry we were unable to complete this step because :]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Invalid_login_Test -->
+        <test-method status="PASS" signature="Invalid_login_Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTestcase@8a6351]" name="Invalid_login_Test" duration-ms="24479" started-at="2015-10-30T12:34:18Z" data-provider="Invalid_Login_DP" finished-at="2015-10-30T12:34:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_04]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hjkh]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Sorry we were unable to complete this step because :]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Invalid_login_Test -->
+        <test-method status="PASS" signature="Invalid_login_Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTestcase@8a6351]" name="Invalid_login_Test" duration-ms="24131" started-at="2015-10-30T12:34:42Z" data-provider="Invalid_Login_DP" finished-at="2015-10-30T12:35:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_05]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Sorry we were unable to complete this step because :]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Invalid_login_Test -->
+        <test-method status="PASS" signature="Invalid_login_Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTestcase@8a6351]" name="Invalid_login_Test" duration-ms="22574" started-at="2015-10-30T12:35:06Z" data-provider="Invalid_Login_DP" finished-at="2015-10-30T12:35:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_06]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rsj]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jhj]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Sorry we were unable to complete this step because :]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Invalid_login_Test -->
+        <test-method status="PASS" signature="valid_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTestcase@8a6351]" name="valid_login" duration-ms="24024" started-at="2015-10-30T12:35:29Z" data-provider="DP_validlogin" finished-at="2015-10-30T12:35:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_07]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qtpworld2008@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[learn123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[qtpworld2008 g]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valid_login -->
+      </class> <!-- TestCases.LoginTestcase -->
+    </test> <!-- CompleteTest -->
+  </suite> <!-- Selenium Test -->
+</testng-results>

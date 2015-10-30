@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Selenium Test" parallel="false" thread-count="5">
+	<test name="CompleteTest">		
+		<groups>
+			<run>
+				<include name="SmokeTest"></include>
+				<include name="RegressionTest"></include>
+				<!--exclude name="RegressionTest"></exclude>-->
+			</run>
+		</groups>
+		
+		<classes> <class name="TestCases.LoginTestcase"> </class>
+					<class name="TestCases.BookSearch_TestCase"></class>
+					<class name="TestCases.BookCart_TestCase"></class>					 
+		</classes> 
+		
+
+	</test>
+</suite>

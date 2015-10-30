@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Selenium_Test">
+              <span class="suite-name border-failed">Selenium Test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Selenium_Test">
+                    <span>D:\Java_Workbook\September2015_Framework\TestNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Selenium_Test">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Selenium_Test">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Selenium_Test">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Selenium_Test">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Selenium_Test">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Selenium_Test">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 2 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Selenium_Test" class="hide-methods failed suite-Selenium_Test"> (hide)</a> <!-- hide-methods failed suite-Selenium_Test -->
+                      <a href="#" panel-name="suite-Selenium_Test" class="show-methods failed suite-Selenium_Test"> (show)</a> <!-- show-methods failed suite-Selenium_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-Selenium_Test">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Test" title="TestCases.BookSearch_TestCase" hash-for-method="valid_booksearch(GB_10, Ways, 495.0)">valid_booksearch(GB_10, Ways, 495.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Test" title="TestCases.BookSearch_TestCase" hash-for-method="valid_booksearch(GB_08, Chandler, 430.0)">valid_booksearch(GB_08, Chandler, 430.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Selenium_Test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Selenium_Test" class="hide-methods passed suite-Selenium_Test"> (hide)</a> <!-- hide-methods passed suite-Selenium_Test -->
+                      <a href="#" panel-name="suite-Selenium_Test" class="show-methods passed suite-Selenium_Test"> (show)</a> <!-- show-methods passed suite-Selenium_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-Selenium_Test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Test" title="TestCases.BookSearch_TestCase" hash-for-method="Invalid_booksearch(GB_11, bbsj54sfdds, Sorry..&#039;bbsj54sfdds&#039; does not match any product on Rediff Books.)">Invalid_booksearch(GB_11, bbsj54sfdds, Sorry..'bbsj54sfdds' does not match any product on Rediff Books.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Test" title="TestCases.LoginTestcase" hash-for-method="Invalid_login_Test(GB_03, fg, , Sorry we were unable to complete this step because :)">Invalid_login_Test(GB_03, fg, , Sorry we were unable to complete this step because :)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Test" title="TestCases.LoginTestcase" hash-for-method="Invalid_login_Test(GB_05, , , Sorry we were unable to complete this step because :)">Invalid_login_Test(GB_05, , , Sorry we were unable to complete this step because :)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Test" title="TestCases.LoginTestcase" hash-for-method="Invalid_login_Test(GB_02, sfag, avioto, Sorry we were unable to complete this step because :)">Invalid_login_Test(GB_02, sfag, avioto, Sorry we were unable to complete this step because :)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Test" title="TestCases.LoginTestcase" hash-for-method="Invalid_login_Test(GB_01, Raje, hjkh, Sorry we were unable to complete this step because :)">Invalid_login_Test(GB_01, Raje, hjkh, Sorry we were unable to complete this step because :)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Test" title="TestCases.LoginTestcase" hash-for-method="Invalid_login_Test(GB_06, rsj, jhj, Sorry we were unable to complete this step because :)">Invalid_login_Test(GB_06, rsj, jhj, Sorry we were unable to complete this step because :)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Test" title="TestCases.LoginTestcase" hash-for-method="Invalid_login_Test(GB_04, , hjkh, Sorry we were unable to complete this step because :)">Invalid_login_Test(GB_04, , hjkh, Sorry we were unable to complete this step because :)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Test" title="TestCases.BookCart_TestCase" hash-for-method="add2Cart(GB_12, qtpworld2008@gmail.com, learn123, Flood and Fire, 1.0, Flood and Fire)">add2Cart(GB_12, qtpworld2008@gmail.com, learn123, Flood and Fire, 1.0, Flood and Fire)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Test" title="TestCases.BookSearch_TestCase" hash-for-method="valid_booksearch(GB_09, Jaico, 4.0)">valid_booksearch(GB_09, Jaico, 4.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Test" title="TestCases.LoginTestcase" hash-for-method="valid_login(GB_07, qtpworld2008@gmail.com, learn123, qtpworld2008 g)">valid_login(GB_07, qtpworld2008@gmail.com, learn123, qtpworld2008 g)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Selenium_Test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Selenium_Test" class="panel Selenium_Test">
+          <div class="suite-Selenium_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCases.BookSearch_TestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="valid_booksearch(GB_10, Ways, 495.0)">
+                  </a> <!-- valid_booksearch(GB_10, Ways, 495.0) -->
+                  <span class="method-name">valid_booksearch</span>
+                  <span class="parameters">(GB_10, Ways, 495.0)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [495] but found [492]
+	at TestCases.BookSearch_TestCase.valid_booksearch(Unknown Source)
+... Removed 28 stack frames<br/> java.lang.AssertionError: expected [495] but found [492]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at TestCases.BookSearch_TestCase.valid_booksearch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:176)<br>org.testng.Assert.assertEquals(Assert.java:186)<br>TestCases.BookSearch_TestCase.valid_booksearch(Unknown Source)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.TestNG.privateMain(TestNG.java:1338)<br>org.testng.TestNG.main(TestNG.java:1307)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="valid_booksearch(GB_08, Chandler, 430.0)">
+                  </a> <!-- valid_booksearch(GB_08, Chandler, 430.0) -->
+                  <span class="method-name">valid_booksearch</span>
+                  <span class="parameters">(GB_08, Chandler, 430.0)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [430] but found [415]
+	at TestCases.BookSearch_TestCase.valid_booksearch(Unknown Source)
+... Removed 28 stack frames<br/> java.lang.AssertionError: expected [430] but found [415]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at TestCases.BookSearch_TestCase.valid_booksearch(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:176)<br>org.testng.Assert.assertEquals(Assert.java:186)<br>TestCases.BookSearch_TestCase.valid_booksearch(Unknown Source)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.TestNG.privateMain(TestNG.java:1338)<br>org.testng.TestNG.main(TestNG.java:1307)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_Test-class-failed -->
+          <div class="suite-Selenium_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.LoginTestcase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Invalid_login_Test(GB_03, fg, , Sorry we were unable to complete this step because :)">
+                  </a> <!-- Invalid_login_Test(GB_03, fg, , Sorry we were unable to complete this step because :) -->
+                  <span class="method-name">Invalid_login_Test</span>
+                  <span class="parameters">(GB_03, fg, , Sorry we were unable to complete this step because :)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Invalid_login_Test(GB_05, , , Sorry we were unable to complete this step because :)">
+                  </a> <!-- Invalid_login_Test(GB_05, , , Sorry we were unable to complete this step because :) -->
+                  <span class="method-name">Invalid_login_Test</span>
+                  <span class="parameters">(GB_05, , , Sorry we were unable to complete this step because :)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Invalid_login_Test(GB_02, sfag, avioto, Sorry we were unable to complete this step because :)">
+                  </a> <!-- Invalid_login_Test(GB_02, sfag, avioto, Sorry we were unable to complete this step because :) -->
+                  <span class="method-name">Invalid_login_Test</span>
+                  <span class="parameters">(GB_02, sfag, avioto, Sorry we were unable to complete this step because :)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Invalid_login_Test(GB_01, Raje, hjkh, Sorry we were unable to complete this step because :)">
+                  </a> <!-- Invalid_login_Test(GB_01, Raje, hjkh, Sorry we were unable to complete this step because :) -->
+                  <span class="method-name">Invalid_login_Test</span>
+                  <span class="parameters">(GB_01, Raje, hjkh, Sorry we were unable to complete this step because :)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Invalid_login_Test(GB_06, rsj, jhj, Sorry we were unable to complete this step because :)">
+                  </a> <!-- Invalid_login_Test(GB_06, rsj, jhj, Sorry we were unable to complete this step because :) -->
+                  <span class="method-name">Invalid_login_Test</span>
+                  <span class="parameters">(GB_06, rsj, jhj, Sorry we were unable to complete this step because :)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Invalid_login_Test(GB_04, , hjkh, Sorry we were unable to complete this step because :)">
+                  </a> <!-- Invalid_login_Test(GB_04, , hjkh, Sorry we were unable to complete this step because :) -->
+                  <span class="method-name">Invalid_login_Test</span>
+                  <span class="parameters">(GB_04, , hjkh, Sorry we were unable to complete this step because :)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="valid_login(GB_07, qtpworld2008@gmail.com, learn123, qtpworld2008 g)">
+                  </a> <!-- valid_login(GB_07, qtpworld2008@gmail.com, learn123, qtpworld2008 g) -->
+                  <span class="method-name">valid_login</span>
+                  <span class="parameters">(GB_07, qtpworld2008@gmail.com, learn123, qtpworld2008 g)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_Test-class-passed -->
+          <div class="suite-Selenium_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.BookSearch_TestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Invalid_booksearch(GB_11, bbsj54sfdds, Sorry..&#039;bbsj54sfdds&#039; does not match any product on Rediff Books.)">
+                  </a> <!-- Invalid_booksearch(GB_11, bbsj54sfdds, Sorry..'bbsj54sfdds' does not match any product on Rediff Books.) -->
+                  <span class="method-name">Invalid_booksearch</span>
+                  <span class="parameters">(GB_11, bbsj54sfdds, Sorry..'bbsj54sfdds' does not match any product on Rediff Books.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="valid_booksearch(GB_09, Jaico, 4.0)">
+                  </a> <!-- valid_booksearch(GB_09, Jaico, 4.0) -->
+                  <span class="method-name">valid_booksearch</span>
+                  <span class="parameters">(GB_09, Jaico, 4.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_Test-class-passed -->
+          <div class="suite-Selenium_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.BookCart_TestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add2Cart(GB_12, qtpworld2008@gmail.com, learn123, Flood and Fire, 1.0, Flood and Fire)">
+                  </a> <!-- add2Cart(GB_12, qtpworld2008@gmail.com, learn123, Flood and Fire, 1.0, Flood and Fire) -->
+                  <span class="method-name">add2Cart</span>
+                  <span class="parameters">(GB_12, qtpworld2008@gmail.com, learn123, Flood and Fire, 1.0, Flood and Fire)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_Test-class-passed -->
+        </div> <!-- panel Selenium_Test -->
+        <div panel-name="test-xml-Selenium_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Java_Workbook\September2015_Framework\TestNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Selenium Test&quot;&gt;
+  &lt;test name=&quot;CompleteTest&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;SmokeTest&quot;/&gt;
+        &lt;include name=&quot;RegressionTest&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.LoginTestcase&quot;/&gt;
+      &lt;class name=&quot;TestCases.BookSearch_TestCase&quot;/&gt;
+      &lt;class name=&quot;TestCases.BookCart_TestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CompleteTest --&gt;
+&lt;/suite&gt; &lt;!-- Selenium Test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Selenium_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Selenium Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">CompleteTest (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Selenium_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Selenium Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">RegressionTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Invalid_booksearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Invalid_login_Test</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">add2Cart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">valid_booksearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">valid_login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">SmokeTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">add2Cart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">valid_booksearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">valid_login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Selenium_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Selenium Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Selenium_Test');
+function tableData_Selenium_Test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'valid_booksearch')
+data.setCell(0, 2, 'TestCases.BookSearch_TestCase')
+data.setCell(0, 3, 50975);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'add2Cart')
+data.setCell(1, 2, 'TestCases.BookCart_TestCase')
+data.setCell(1, 3, 47933);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Invalid_login_Test')
+data.setCell(2, 2, 'TestCases.LoginTestcase')
+data.setCell(2, 3, 36920);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Invalid_login_Test')
+data.setCell(3, 2, 'TestCases.LoginTestcase')
+data.setCell(3, 3, 26639);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'valid_booksearch')
+data.setCell(4, 2, 'TestCases.BookSearch_TestCase')
+data.setCell(4, 3, 24816);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Invalid_login_Test')
+data.setCell(5, 2, 'TestCases.LoginTestcase')
+data.setCell(5, 3, 24479);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Invalid_login_Test')
+data.setCell(6, 2, 'TestCases.LoginTestcase')
+data.setCell(6, 3, 24132);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Invalid_login_Test')
+data.setCell(7, 2, 'TestCases.LoginTestcase')
+data.setCell(7, 3, 24131);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'valid_login')
+data.setCell(8, 2, 'TestCases.LoginTestcase')
+data.setCell(8, 3, 24024);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Invalid_login_Test')
+data.setCell(9, 2, 'TestCases.LoginTestcase')
+data.setCell(9, 3, 22574);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'valid_booksearch')
+data.setCell(10, 2, 'TestCases.BookSearch_TestCase')
+data.setCell(10, 3, 22372);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Invalid_booksearch')
+data.setCell(11, 2, 'TestCases.BookSearch_TestCase')
+data.setCell(11, 3, 19206);
+window.suiteTableData['Selenium_Test']= { tableData: data, tableDiv: 'times-div-Selenium_Test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Selenium_Test">
+              </div> <!-- times-div-Selenium_Test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Selenium_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Selenium Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Selenium_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Selenium_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.LoginTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Invalid_login_Test(GB_01, Raje, hjkh, Sorry we were unable to complete this step because :)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Invalid_login_Test(GB_02, sfag, avioto, Sorry we were unable to complete this step because :)</span>
+                <span class="method-start">36920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Invalid_login_Test(GB_03, fg, , Sorry we were unable to complete this step because :)</span>
+                <span class="method-start">63559 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Invalid_login_Test(GB_04, , hjkh, Sorry we were unable to complete this step because :)</span>
+                <span class="method-start">87691 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Invalid_login_Test(GB_05, , , Sorry we were unable to complete this step because :)</span>
+                <span class="method-start">112170 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Invalid_login_Test(GB_06, rsj, jhj, Sorry we were unable to complete this step because :)</span>
+                <span class="method-start">136301 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">valid_login(GB_07, qtpworld2008@gmail.com, learn123, qtpworld2008 g)</span>
+                <span class="method-start">158885 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.BookSearch_TestCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Invalid_booksearch(GB_11, bbsj54sfdds, Sorry..'bbsj54sfdds' does not match any product on Rediff Books.)</span>
+                <span class="method-start">182929 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">valid_booksearch(GB_08, Chandler, 430.0)</span>
+                <span class="method-start">202175 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">valid_booksearch(GB_09, Jaico, 4.0)</span>
+                <span class="method-start">224547 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">valid_booksearch(GB_10, Ways, 495.0)</span>
+                <span class="method-start">275522 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.BookCart_TestCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">add2Cart(GB_12, qtpworld2008@gmail.com, learn123, Flood and Fire, 1.0, Flood and Fire)</span>
+                <span class="method-start">300348 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

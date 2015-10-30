@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Selenium Test]">
+  <test name="CompleteTest(failed)">
+    <groups>
+      <run>
+        <include name="SmokeTest"/>
+        <include name="RegressionTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestCases.BookCart_TestCase">
+        <methods>
+          <include name="add2Cart"/>
+        </methods>
+      </class> <!-- TestCases.BookCart_TestCase -->
+      <class name="TestCases.BookSearch_TestCase">
+        <methods>
+          <include name="Invalid_booksearch"/>
+          <include name="valid_booksearch"/>
+        </methods>
+      </class> <!-- TestCases.BookSearch_TestCase -->
+      <class name="TestCases.LoginTestcase">
+        <methods>
+          <include name="Invalid_login_Test"/>
+          <include name="valid_login"/>
+        </methods>
+      </class> <!-- TestCases.LoginTestcase -->
+    </classes>
+  </test> <!-- CompleteTest(failed) -->
+</suite> <!-- Failed suite [Selenium Test] -->
